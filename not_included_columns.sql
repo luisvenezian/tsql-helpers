@@ -2,7 +2,7 @@ create function fn_index_columns(@ix varchar(300), @included bit = 0)
 /* *	
  *	Retorna colunas de index @ix,
  *  
- *  Par‚metros, 
+ *  Par√¢metros, 
  *  @included = 1, somente colunas is_included = 1 
  *  @included = 0, somente colunas is_included = 0
  *  Luis, 2019/07/25 
@@ -24,4 +24,5 @@ begin
 
 	return @columns
 end
--- select dbo.fn_index_columns('indexname')
+-- select dbo.fn_index_columns('indexname',0)
+-- select dbo.fn_index_columns('indexname',1)
