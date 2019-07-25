@@ -24,4 +24,4 @@ begin
 
 	return @columns
 end
--- select dbo.not_included_columns('indexname')
+-- select dbo.fn_index_columns('indexname')
