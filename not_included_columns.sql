@@ -7,7 +7,7 @@ create function fn_index_columns(@ix varchar(300), @included bit = 0)
  *  @included = 0, somente colunas is_included = 0
  *  Luis, 2019/07/25 
  */
-returns varchar(max)
+returns varchar(max)	
 as
 begin
 
